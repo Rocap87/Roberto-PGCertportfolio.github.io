@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			div.ex1 {
+			  margin-left: 20px;
+			  margin-right: 100px;
+			}
+			</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="generic Secure Software Development (Computer Science).html" class="title">Secure Software Development</a>
+				<nav id="nav">
+					<ul>
+						<li><a href="#main" class="active">Collaborative discussions</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="ex1">
+							<h1 class="major">Collaborative discussions</h1>
+							<span class="image fit"><img src="images/collaborative.jpg" alt="" /></span>
+							<p>In this page are included the two collaborative discussions of the module Secure Software Development. The first collaborative discussion focuses on selecting a coding weakness identigied by OWASP and create a flowchart of the steps whihc may led to the weakness occuring.
+								The second discussion is about the case study of TrueCrypt whit the aim to answer two questions:
+								<li>The (anonymous) TrueCrypt authors have said “Using TrueCrypt is not secure as it may contain unfixed security issues” (http://truecrypt.sourceforge.net/, 2014). Does the cryptanalysis provided above prove or disprove this assumption?</li>
+								<li>Would you be prepared to recommend TrueCrypt to a friend as a secure storage environment? What caveats (if any) would you add?</li>
+								Present an ontology design which captures the weaknesses of TrueCrypt, and organise them according to their severity. Expand the ontology design by considering the factors which will cause each weakness to become an issue from a user's perspective.
+								
+							</p>
+							<h4>Collaborative discussion Unit 1 - 3</h4>
+							<p>The majority of web applications consent the users to have immediate access to a series of services supplied by the organisation who provides the app. In most of the cases the user creates a profile to have access to the different information and services offered by the application like the opportunity of making bank transfers and check the own bank account in the case of the mobile banking apps, order and pay for the groceries shopping, and many others.
+								These kind of web application can be subjected to identification and authentication failures which has been indicated as one of the top 10 web application security risks by the OWASP (OWASP, 2021).</p>
+							<p>Considering the high values of information contained in these kind of web applications, cyber criminals might be interested in targeting them to gain access to valuable information by performing a series of authentication attacks.
+								The attacks might result successful in case the applications have a series weaknesses like the exposure to session identifier in the URL using weak password and ineffective credential recovery processes, etc. (OWASP, 2021).</p>
+							<p>Password can be stolen in different ways such as session hijacking where can be exploited a web session and in particular the attacker can manage to steal the session token sent from the web server to the user after completed the authentication (OWASP, 2020) . Another way is the use of credential stuffing subsequent to phishing or malware attack were the set of username and password stolen from a database can be used to access other websites (OWASP, 2020).
+								These malicious attacks can be prevented by a series of measures like (OWASP, 2021):
+								<li>Align password length, complexity, and rotation to NIST guidelines.</li>
+								<li>Ensure registration, credential recovery and API pathways are hardened against enumeration attacks.</li>
+								<li>Use secure session manager.</li>
+								<li>Implement weak password checks.</li>
+								The sequence diagram below shows the steps that can lead to identification and authentication failures when a web application doesn't implement a weak password check.</p>
+								
+								<div class="inner">
+									<span class="image fit"><img src="images/Sequence Diagram1.png" style="object-fit:cover;
+									   width:800px;
+									   height:670px;" /></span>
+										
+								</div>
+							
+							<p>REFERENCES</p>
+								<li>Owasp.org (2021). A07:2021 – Identification and Authentication Failures. Available from:https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/ Accessed 19 June 2022].</a></li>
+								<li>Owasp.org (2020). Session hijacking attack. Available from: https://owasp.org/www-community/attacks/Session_hijacking_attack [Accessed 26 June 2022].</a></li>
+								<li>Owasp.org (2020). Credential stuffing. Available from: https://owasp.org/www-community/attacks/Credential_stuffing [Accessed 26 June 2022].</a></li>
+							<p></p>	
+							<p>RESPONSES TO PEER'S DISCUSSIONS</p>
+							<li><a href="https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=314452" class="title">Response to Grzegorz Pikus</a></li>
+							<li><a href="https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=314256" class="title">Response to Maja Tagt</a></li>
+							<p></p>
+								<h4>Collaborative discussion Unit 8 - 10</h4>
+								<p>In 2014 the author of TrueCrypt declared that the tool is not secured due to a series of unfixed security issues. In this occasion was advised to migrate from TrueCrypt to BitLocker (truecrypt.sourceforge.net, n.d.).</p>
+								<p>The same year has been published the security assessment of TrueCrypt realised by iSec Partners for Open Crypto Audit Project. The report examined the bootloader and Windows kernel driver (Junestam & Guigo, 2014).
+									Junestam and Guigo (2014) discovered eleven vulnerabilities when were analysing TrueCrypt with four of them with a medium severity, four with a low severity and three addressed to informational severity.</p>
+								
+								<p>The report stated “the source code for both the bootloader and the Windows kernel driver did not meet expected standards for secure code” (Junestam & Guigo, 2014). Moreover, were highlighted other issues such as the lack of comments, the use of insecure functions, weakness in the volume header integrity checks.</p>
+								
+								<p>Despite not presenting any critical issue among the vulnerabilities listed in the paper, I would not consider TrueCrypt safe to use because part of the code didn't meet the security standards, it present a series of medium vulnerabilities, bugs not being fixed and the software became obsolete considering it has been discontinued with the author abandoning the project and declaring the software insecure.
+									As many of my peers highlighted in their blogpost, the obvious choice for TrueCrypt users was to move on a different encryption software such as VeraCrypt which is a fork of TrueCrypt.</p>
+							<p></p>
+							<p>Ontology</p>
+								<div class="inner">
+									<span class="image fit"><img src="images/Ontology.001 copia Grande.jpeg" style="object-fit:cover;
+									   width:900px;
+									   height:500px;" /></span>
+										
+								</div>
+
+							<p>REFERENCES</p>
+								<li>Junestam, A. and Guigo, N. (2014). Open Crypto Audit Project TrueCrypt Security Assessment Prepared for: Prepared by. [online] Available from https://opencryptoaudit.org/reports/iSec_Final_Open_Crypto_Audit_Project_TrueCrypt_Security_Assessment.pdf. [Accessed 6 August 2022].</a></li>
+								<li>truecrypt.sourceforge.net. (n.d.). TrueCrypt. [online] Available from: http://truecrypt.sourceforge.net [Accessed 6 August 2022].</a></li>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="ex1">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
